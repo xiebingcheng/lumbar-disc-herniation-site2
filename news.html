@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Medical News & Updates — myMedVia</title>
+  <meta name="description" content="Latest medical news, healthcare innovations, and patient updates from myMedVia.">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav-container">
+      <a href="index.html" class="logo">myMedVia</a>
+      <button class="nav-toggle" aria-label="Toggle navigation"><span class="hamburger"></span></button>
+      <ul class="nav-menu">
+        <li><a href="treatment/lumbar-disc-herniation.html">Treatments</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="news.html" class="active">News</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html" class="btn btn-primary">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>Medical News & Updates</h1>
+        <p>Stay informed about the latest advancements in spine health, medical tourism, and patient care innovations.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <nav class="breadcrumb">
+          <ol class="breadcrumb-list">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item"><a href="news.html">News</a></li>
+            <li class="breadcrumb-item" id="breadcrumb-page"><span>Page 1</span></li>
+          </ol>
+        </nav>
+
+        <h2 class="text-center" style="margin-bottom: var(--spacing-xl);">Latest Updates</h2>
+
+        <div id="articles-container" class="card-grid"></div>
+
+        <div id="pagination" style="margin-top: var(--spacing-xl); display: flex; justify-content: center; gap: var(--spacing-sm); flex-wrap: wrap;"></div>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container container-narrow text-center">
+        <h2>Stay Updated</h2>
+        <p style="margin: var(--spacing-md) 0 var(--spacing-lg);">Subscribe to our newsletter for the latest medical news.</p>
+        <a href="contact.html" class="btn btn-primary btn-lg">Get a Free Consultation</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4>myMedVia</h4>
+          <p>Cross-border medical acceleration service connecting international patients with top spine surgeons in China.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Treatments</h4>
+          <ul>
+            <li><a href="treatment/lumbar-disc-herniation.html">Lumbar Disc Herniation</a></li>
+            <li><a href="treatment/symptoms.html">Symptoms</a></li>
+            <li><a href="treatment/treatment-options.html">Treatment Options</a></li>
+            <li><a href="treatment/cost.html">Cost</a></li>
+            <li><a href="treatment/recovery.html">Recovery</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="news.html">News</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:info@xxx.com">info@xxx.com</a></li>
+            <li><a href="https://wa.me/861234567890">WhatsApp</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 myMedVia. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+  <script>
+    const articles = [
+      { date: 'May 28, 2026', category: 'Innovation', title: 'AI-Assisted Diagnostics Now Available at Partner Hospitals', excerpt: 'Our partner hospitals have implemented advanced AI diagnostic systems that can analyze MRI scans with 98.7% accuracy.', url: 'news/2026-05-28-ai-diagnostics.html' },
+      { date: 'May 25, 2026', category: 'Partnership', title: 'Dr. Wei Zhang Joins Our Medical Advisory Board', excerpt: 'Dr. Wei Zhang, a renowned spine surgeon with over 15 years of experience, has joined our advisory board.', url: 'news/2026-05-25-new-surgeon.html' },
+      { date: 'May 22, 2026', category: 'Patient Story', title: 'Canadian Patient Returns to Active Lifestyle After Spinal Surgery', excerpt: 'After 18 months of chronic back pain, Michael Thompson traveled to Beijing for successful microdiscectomy.', url: 'news/2026-05-22-canadian-patient.html' },
+      { date: 'May 20, 2026', category: 'Research', title: 'Spine Surgery Waiting Times: Global Comparison Study', excerpt: 'International study reveals significant disparities in wait times across 15 countries.', url: 'news/2026-05-20-waiting-times-study.html' },
+      { date: 'May 18, 2026', category: 'Healthcare', title: 'Shanghai Hospital Receives JCI Reaccreditation', excerpt: 'Peking Union Medical College Hospital has received its third JCI reaccreditation.', url: 'news/2026-05-18-jci-accreditation.html' },
+      { date: 'May 17, 2026', category: 'Technology', title: 'New Minimally Invasive Spine Technique Reduces Recovery Time by 50%', excerpt: 'Precision Percutaneous Discectomy uses robotic guidance for sub-millimeter precision.', url: 'news/2026-05-17-new-minimally-invasive.html' },
+      { date: 'May 15, 2026', category: 'Technology', title: 'Next-Generation Robotic Spine Surgery Platform Launched', excerpt: 'Robotic-assisted surgical platform installed at Guangzhou partner facility.', url: 'news/2026-05-15-robotic-surgery.html' },
+      { date: 'May 14, 2026', category: 'Healthcare', title: 'Patient Success Rate Reaches 97% at Partner Hospitals', excerpt: 'Our network achieved 97% success rate in spine surgeries over 12 months.', url: 'news/2026-05-14-success-rate-97-percent.html' },
+      { date: 'May 12, 2026', category: 'Industry', title: 'Medical Tourism Industry Report Shows 34% Growth', excerpt: 'Spine surgery medical tourism has grown 34% globally, with China as leading destination.', url: 'news/2026-05-12-medical-tourism-report.html' },
+      { date: 'May 11, 2026', category: 'Service', title: 'Travel Insurance Coverage for Medical Tourism: What You Need to Know', excerpt: 'Guide explaining travel insurance policies for international medical procedures.', url: 'news/2026-05-11-travel-insurance-guide.html' },
+      { date: 'May 9, 2026', category: 'Innovation', title: 'Stem Cell Therapy for Disc Degeneration: New Breakthrough', excerpt: 'Phase II trial shows 78% of patients experienced significant pain reduction.', url: 'news/2026-05-09-stem-cell-therapy.html' },
+      { date: 'May 8, 2026', category: 'Research', title: 'New Study: Early Mobilization After Spine Surgery Improves Outcomes', excerpt: 'Patients beginning PT 24 hours after microdiscectomy experience faster recovery.', url: 'news/2026-05-08-recovery-study.html' },
+      { date: 'May 7, 2026', category: 'Industry', title: 'UK NHS Announces 18-Month Spine Surgery Wait Crisis', excerpt: 'UK orthopedic spine surgeries face waits up to 18 months in some regions.', url: 'news/2026-05-07-uk-nhs-wait-crisis.html' },
+      { date: 'May 5, 2026', category: 'Service', title: 'Free Virtual Consultation Service Now Available', excerpt: 'Free initial virtual consultations with spine specialists within 24 hours.', url: 'news/2026-05-05-virtual-consultation.html' },
+      { date: 'May 4, 2026', category: 'Patient Story', title: 'Patient Story: From Chronic Pain to Mountain Hiking in 8 Weeks', excerpt: 'Sarah Mitchell completed a 12km mountain hike 8 weeks after endoscopic discectomy.', url: 'news/2026-05-04-hiking-after-surgery.html' },
+      { date: 'May 2, 2026', category: 'Innovation', title: 'Virtual Reality in Surgical Training: China\'s Medical Innovation', excerpt: 'Chinese institutions pioneer VR simulation in spine surgeon training.', url: 'news/2026-05-02-vr-surgical-training.html' },
+      { date: 'May 1, 2026', category: 'Patient Story', title: 'Australian Nurse Shares Her China Surgery Experience', excerpt: 'Samantha Clarke documents her journey from Melbourne to Guangzhou.', url: 'news/2026-05-01-australian-patient.html' },
+      { date: 'April 30, 2026', category: 'Technology', title: 'Navigation System Accuracy in Spine Surgery Exceeds 99%', excerpt: 'Advanced intraoperative navigation achieved 99.2% accuracy in screw placement.', url: 'news/2026-04-30-navigation-accuracy.html' },
+      { date: 'April 28, 2026', category: 'Innovation', title: '3D-Printed Spinal Implants Now Available for Complex Cases', excerpt: 'Patient-specific 3D-printed spinal implants for optimal fusion outcomes.', url: 'news/2026-04-28-3d-printing.html' },
+      { date: 'April 27, 2026', category: 'Patient Story', title: 'German Patient Shares Spinal Stenosis Surgery Experience', excerpt: 'Klaus Weber traveled to Shanghai after 7-month wait through German system.', url: 'news/2026-04-27-german-patient-story.html' },
+      { date: 'April 24, 2026', category: 'Treatment', title: 'Endoscopic vs Open Surgery: Which Is Right for You?', excerpt: 'Understanding differences between endoscopic and traditional open spine surgery.', url: 'news/2026-04-24-endoscopic-vs-open.html' },
+      { date: 'April 21, 2026', category: 'Service', title: 'Pre-Surgery Checklist: Everything You Need to Prepare', excerpt: 'Comprehensive checklist covering medical, travel, and personal preparations.', url: 'news/2026-04-21-pre-surgery-checklist.html' },
+      { date: 'April 18, 2026', category: 'Industry', title: 'Insurance Company Launches Medical Tourism Coverage Option', excerpt: 'GlobalCare announces new rider covering spine surgery in China up to $15,000.', url: 'news/2026-04-18-insurance-medical-tourism.html' },
+      { date: 'April 15, 2026', category: 'Recovery', title: 'Acupressure for Post-Spine Surgery Recovery: Does It Help?', excerpt: 'Studies show acupressure can reduce opioid reliance by up to 35%.', url: 'news/2026-04-15-acupressure-recovery.html' },
+      { date: 'April 12, 2026', category: 'Industry', title: 'Mexico Emerges as Spine Surgery Destination: How It Compares', excerpt: 'Mexico vs China comparison for spine surgery including expertise and accreditation.', url: 'news/2026-04-12-mexico-comparison.html' },
+      { date: 'April 9, 2026', category: 'Recovery', title: 'Hospital Food: Nutrition for Optimal Spinal Recovery', excerpt: 'Proper nutrition plays crucial role in spinal surgery recovery.', url: 'news/2026-04-09-spine-surgery-nutrition.html' },
+      { date: 'April 6, 2026', category: 'Recovery', title: 'Yoga Positions Safe After Lumbar Disc Surgery', excerpt: 'Physical therapists compile guide to safe yoga poses for recovery.', url: 'news/2026-04-06-yoga-after-surgery.html' },
+      { date: 'April 3, 2026', category: 'Innovation', title: 'Real-Time Post-Op Monitoring via Smartband Technology', excerpt: 'Smartband allows surgeons to monitor recovery metrics after discharge.', url: 'news/2026-04-03-smartband-monitoring.html' },
+      { date: 'March 31, 2026', category: 'Treatment', title: 'Epidural Steroid Injections vs Surgery: When to Choose', excerpt: 'When injections may be preferred vs when surgery is recommended.', url: 'news/2026-03-31-epidural-vs-surgery.html' },
+      { date: 'March 28, 2026', category: 'Patient Story', title: 'Southeast Asian Patient Success Stories', excerpt: 'Patients from Indonesia and Malaysia discover China offers comparable quality at lower costs.', url: 'news/2026-03-28-southeast-asia-comparison.html' },
+      { date: 'March 25, 2026', category: 'Recovery', title: 'Sleep Position Guide After Spine Surgery', excerpt: 'Top recommendations for comfortable sleeping positions during recovery.', url: 'news/2026-03-25-sleep-positions.html' },
+      { date: 'March 22, 2026', category: 'Treatment', title: 'Disc Herniation in Athletes: Treatment Considerations', excerpt: 'Sport-specific considerations for athletes dealing with disc herniation.', url: 'news/2026-03-22-athletes-disc-herniation.html' },
+      { date: 'March 19, 2026', category: 'Healthcare', title: 'Mental Health Impact of Chronic Back Pain', excerpt: 'Chronic pain patients are three times more likely to experience depression.', url: 'news/2026-03-19-mental-health-chronic-pain.html' },
+      { date: 'March 16, 2026', category: 'Recovery', title: 'Walking Program: 12-Week Progressive Schedule After Surgery', excerpt: 'Progressive 12-week walking program for building endurance.', url: 'news/2026-03-16-walking-program.html' },
+      { date: 'March 13, 2026', category: 'Industry', title: 'US Healthcare System Spine Surgery Costs: Hidden Fees Explained', excerpt: 'Understanding full cost breakdown including hidden charges in the US.', url: 'news/2026-03-13-us-spine-surgery-costs.html' },
+      { date: 'March 10, 2026', category: 'Service', title: 'Medical Tourism and Travel: Visa Requirements for China', excerpt: 'Visa options and requirements including medical visa (F visa).', url: 'news/2026-03-10-china-visa-requirements.html' },
+      { date: 'March 7, 2026', category: 'Service', title: 'Second Opinion Service: Why It Matters Before Spine Surgery', excerpt: 'Studies show 20-30% of surgical recommendations change after second review.', url: 'news/2026-03-07-second-opinion.html' },
+      { date: 'March 4, 2026', category: 'Service', title: 'Companion Travel Guide: Supporting a Spine Surgery Patient', excerpt: 'Essential guide for those accompanying a loved one for surgery.', url: 'news/2026-03-04-companion-guide.html' },
+      { date: 'March 1, 2026', category: 'Treatment', title: 'Artificial Disc Replacement vs Spinal Fusion: Long-Term Outcomes', excerpt: 'Comparing ADR and fusion with 10-year outcome data.', url: 'news/2026-03-01-disc-replacement-vs-fusion.html' }
+    ];
+
+    const ARTICLES_PER_PAGE = 10;
+    let currentPage = 1;
+
+    function renderPage(page) {
+      const container = document.getElementById('articles-container');
+      const start = (page - 1) * ARTICLES_PER_PAGE;
+      const end = start + ARTICLES_PER_PAGE;
+      const pageArticles = articles.slice(start, end);
+
+      container.innerHTML = pageArticles.map(a => `
+        <article class="card">
+          <div class="card-meta"><span class="card-date">${a.date}</span> · <span class="card-category">${a.category}</span></div>
+          <h3><a href="${a.url}">${a.title}</a></h3>
+          <p>${a.excerpt}</p>
+          <a href="${a.url}" class="btn btn-secondary btn-sm" style="margin-top: var(--spacing-md);">Read More</a>
+        </article>
+      `).join('');
+
+      renderPagination(page);
+      document.getElementById('breadcrumb-page').innerHTML = '<span>Page ' + page + '</span>';
+    }
+
+    function renderPagination(page) {
+      const pagination = document.getElementById('pagination');
+      const totalPages = Math.ceil(articles.length / ARTICLES_PER_PAGE);
+      let html = '';
+
+      if (page > 1) {
+        html += '<button onclick="goToPage(' + (page - 1) + ')" class="btn btn-secondary">Previous</button>';
+      }
+
+      for (let i = 1; i <= totalPages; i++) {
+        if (i === page) {
+          html += '<button class="btn btn-primary">' + i + '</button>';
+        } else {
+          html += '<button onclick="goToPage(' + i + ')" class="btn btn-secondary">' + i + '</button>';
+        }
+      }
+
+      if (page < totalPages) {
+        html += '<button onclick="goToPage(' + (page + 1) + ')" class="btn btn-secondary">Next</button>';
+      }
+
+      pagination.innerHTML = html;
+    }
+
+    function goToPage(page) {
+      currentPage = page;
+      renderPage(page);
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      location.hash = 'page' + page;
+    }
+
+    window.addEventListener('hashchange', function() {
+      const hash = location.hash;
+      if (hash.startsWith('#page')) {
+        const page = parseInt(hash.replace('#page', ''));
+        if (page >= 1 && page <= Math.ceil(articles.length / ARTICLES_PER_PAGE)) {
+          currentPage = page;
+          renderPage(page);
+        }
+      }
+    });
+
+    document.addEventListener('DOMContentLoaded', function() {
+      const hash = location.hash;
+      let page = 1;
+      if (hash.startsWith('#page')) {
+        page = parseInt(hash.replace('#page', '')) || 1;
+      }
+      renderPage(page);
+    });
+  </script>
+</body>
+</html>
